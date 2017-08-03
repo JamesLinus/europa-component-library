@@ -23,19 +23,19 @@
 }
 
 .ecl-footer__title {
-  border-bottom: 2px solid map-get($ecl-colors, blue-50);
+  border-bottom: 2px solid map-get($ecl-colors, 'blue-50');
   color: #fff;
-  margin-bottom: map-get($ecl-spacing, xxxs);
-  padding-bottom: map-get($ecl-spacing, xxxs);
+  margin-bottom: map-get($ecl-spacing, 'xxxs');
+  padding-bottom: map-get($ecl-spacing, 'xxxs');
 
   @include ecl-media-breakpoint-between(md, lg) {
-    min-height: map-get($ecl-spacing, xl);
+    min-height: map-get($ecl-spacing, 'xl');
     padding-bottom: 0;
   }
 
   // Make titles height auto on large screens.
   @include ecl-media-breakpoint-up(xl) {
-    margin-bottom: map-get($ecl-spacing, s);
+    margin-bottom: map-get($ecl-spacing, 's');
     min-height: auto;
   }
 }
@@ -55,16 +55,16 @@
   margin: 0;
   max-width: none;
   padding-left: 0;
+}
 
-  .ecl-footer__menu-item {
-    font-size: map-get($ecl-font-size, xs);
-    margin-bottom: map-get($ecl-spacing, xxxs);
-  }
+.ecl-footer__menu-item {
+  font-size: map-get($ecl-font-size, 's');
 }
 
 // By default footer links should be white in all states.
 .ecl-footer__link {
   color: #fff;
+  line-height: 1.66;
 }
 
 .ecl-footer__link:hover,
@@ -76,23 +76,23 @@
 }
 
 .ecl-footer__column {
-  padding-top: map-get($ecl-spacing, m);
+  padding-top: map-get($ecl-spacing, 'm');
 }
 
 .ecl-footer__column:last-child {
-  padding-bottom: map-get($ecl-spacing, m);
+  padding-bottom: map-get($ecl-spacing, 'm');
 }
 
 .ecl-footer__site-identity {
-  background-color: map-get($ecl-colors, blue-25);
-  color: map-get($ecl-colors, blue-120);
+  background-color: map-get($ecl-colors, 'blue-25');
+  color: map-get($ecl-colors, 'blue-120');
 
   // Links should have a different color because of their background.
   .ecl-footer__link,
   .ecl-footer__link:hover,
   .ecl-footer__link:active,
   .ecl-footer__link:focus {
-    color: map-get($ecl-colors, blue-120);
+    color: map-get($ecl-colors, 'blue-120');
   }
 
   h4 .ecl-footer__link {
@@ -101,40 +101,40 @@
 
   .ecl-footer__column {
     padding-bottom: 0;
-    padding-top: map-get($ecl-spacing, s);
+    padding-top: map-get($ecl-spacing, 's');
   }
 
   .ecl-footer__column:last-child {
-    padding-bottom: map-get($ecl-spacing, s);
+    padding-bottom: map-get($ecl-spacing, 's');
     padding-top: 0;
   }
 }
 
 .ecl-footer__site-corporate {
-  background-color: map-get($ecl-colors, blue-75);
+  background-color: map-get($ecl-colors, 'blue-75');
   color: #fff;
 }
 
 .ecl-footer__ec {
   background-color: $ecl-color-primary;
   color: #fff;
-  padding: map-get($ecl-spacing, s) 0;
+  padding: map-get($ecl-spacing, 's') 0;
 }
 
 @include ecl-media-breakpoint-up(sm) {
   .ecl-footer__column {
-    padding-bottom: map-get($ecl-spacing, l);
-    padding-top: map-get($ecl-spacing, l);
+    padding-bottom: map-get($ecl-spacing, 'l');
+    padding-top: map-get($ecl-spacing, 'l');
   }
 
   /* Specifics for this type of footer when non-mobile */
   .ecl-footer__site-identity {
     .ecl-footer__column {
-      padding-bottom: map-get($ecl-spacing, s);
+      padding-bottom: map-get($ecl-spacing, 's');
     }
 
     .ecl-footer__column:last-child {
-      padding-top: map-get($ecl-spacing, s);
+      padding-top: map-get($ecl-spacing, 's');
     }
 
     .ecl-footer__column:last-child .ecl-list-inline__item {
